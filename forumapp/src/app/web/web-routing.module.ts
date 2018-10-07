@@ -8,10 +8,14 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'about', component: AboutMeComponent },
-  { path: 'contactme', component: ContactMeComponent },
+  { path: 'contact', component: ContactMeComponent },
   {
     path: 'blog',
     loadChildren: '../blog/blog.module#BlogModule'
+  },
+  {
+    path: 'photo',
+    loadChildren: '../photo-gallery/photo-gallery.module#PhotoGalleryModule'
   }
 ];
 
